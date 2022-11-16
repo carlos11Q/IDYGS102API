@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDYGS102API", "IDYGS102API\IDYGS102API.csproj", "{3734CEF3-6D7C-4677-AC08-9EF53F7122FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{284F0176-D604-47EF-8742-699B02CAE09D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3734CEF3-6D7C-4677-AC08-9EF53F7122FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3734CEF3-6D7C-4677-AC08-9EF53F7122FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3734CEF3-6D7C-4677-AC08-9EF53F7122FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3734CEF3-6D7C-4677-AC08-9EF53F7122FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284F0176-D604-47EF-8742-699B02CAE09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284F0176-D604-47EF-8742-699B02CAE09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284F0176-D604-47EF-8742-699B02CAE09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284F0176-D604-47EF-8742-699B02CAE09D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6DBF152-F830-48DF-AAFC-0DBB259CA73C}
+	EndGlobalSection
+EndGlobal
