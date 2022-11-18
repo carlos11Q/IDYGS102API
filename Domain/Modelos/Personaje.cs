@@ -29,5 +29,6 @@ namespace Domain.Modelos
         public string Color { get; set; }
         public string Poder { get; set; }
         public int FkGenero { get; set; }
+        public string genero { get; set; }
     }
 }

@@ -80,5 +80,23 @@ namespace IDYGS102API.Controllers
             PersonajeResponse response = new PersonajeResponse();
             return new Response<PersonajeResponse>(response, "elimindo");
         }
+
+        [HttpGet("{id}")]
+        public async Task<Response<PersonajeResponse>> ObtenerPersonaje(int id)
+        {
+            Personaje personaje = _context.personajes.Include( x => x.genero).FirstOrDefault(y => y.PkPersonaje ==id);
+            
+            PersonajeResponse personajeResponse = new PersonajeResponse();
+            personajeResponse.Poder = personaje.Poder;
+            personajeResponse.Nombre = personaje.Nombre;
+            personajeResponse.Color = personaje.Color;
+            personajeResponse.FkGenero = personaje.FkGenero;
+            personajeResponse.genero = personaje.genero.Nombre;
+            
+          
+            return new Response<PersonajeResponse>(personajeResponse, "personaje Buscado");
+        }
+
+       
     }
 }
