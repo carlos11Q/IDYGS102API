@@ -2,9 +2,11 @@
 using IDYGS102API.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace IDYGS102API.Controllers
@@ -68,5 +70,15 @@ namespace IDYGS102API.Controllers
             }
         }
 
+        [HttpDelete("{id}")]
+        public async Task<Response<PersonajeResponse>> Delete(int id)
+        {
+            Personaje personaje = _context.personajes.Find(id);
+            _context.personajes.Remove(personaje);
+            await _context.SaveChangesAsync();
+
+            PersonajeResponse response = new PersonajeResponse();
+            return new Response<PersonajeResponse>(response, "elimindo");
+        }
     }
 }
